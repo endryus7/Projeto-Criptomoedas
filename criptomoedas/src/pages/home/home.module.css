@@ -61,7 +61,7 @@ table td {
 
 .tdLabel {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -81,6 +81,23 @@ table td {
     color: #fff;
     margin: 14px;
     border-radius: 8px;   
+}
+
+.logo{
+  width: 20px;
+  height: 20px;
+  transition: all 1s;
+}
+
+.logo:hover{
+  transform: scale(1.5);
+  z-index: 99;
+}
+
+.name{
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 /* responsividade tabela */
@@ -132,5 +149,9 @@ table td {
   td:last-child,
   th:last-child {
     border-radius: 0;
+  }
+
+  .name img{
+    margin-left: 14px;
   }
 }
